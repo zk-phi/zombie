@@ -1,0 +1,14 @@
+* zombie.el
+
+emacs 用の ZOMBIE 開発環境
+
+major mode for editing ZOMBIE programs
+
+** screenshot
+
+[[screencast.png]]
+
+** features
+
+- syntax highlighting
+- automatic indentation
