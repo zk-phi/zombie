@@ -1,3 +1,38 @@
+;;; zombie.el --- major mode for editing ZOMBIE programs
+
+;; Copyright (C) 2014 zk_phi
+
+;; This program is free software; you can redistribute it and/or modify
+;; it under the terms of the GNU General Public License as published by
+;; the Free Software Foundation; either version 2 of the License, or
+;; (at your option) any later version.
+;;
+;; This program is distributed in the hope that it will be useful,
+;; but WITHOUT ANY WARRANTY; without even the implied warranty of
+;; MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+;; GNU General Public License for more details.
+;;
+;; You should have received a copy of the GNU General Public License
+;; along with this program; if not, write to the Free Software
+;; Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301 USA
+
+;; Author: zk_phi
+;; URL: http://hins11.yu-yake.com/
+;; Version: 1.0.0
+
+;;; Commentary:
+
+;; Recomended settings:
+;;
+;;   (autoload 'zombie-mode "zombie")
+;;   (push '("\\.zombie$" . zombie-mode) auto-mode-alist)
+
+;;; Change Log:
+
+;; 1.0.0 first released
+
+;;; Code:
+
 (defgroup zombie nil
   "Editing ZOMBIE programs."
   :group 'languages)
@@ -60,3 +95,5 @@
   (set (make-local-variable 'font-lock-defaults) '(zombie-font-lock-keywords)))
 
 (provide 'zombie)
+
+;;; zombie.el ends here
