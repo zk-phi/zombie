@@ -94,6 +94,9 @@
   (set (make-local-variable 'indent-line-function) 'zombie-indent-line)
   (set (make-local-variable 'font-lock-defaults) '(zombie-font-lock-keywords)))
 
+;;;###autoload
+(add-to-list 'auto-mode-alist '("\\.zombie\\'" . zombie-mode))
+
 (provide 'zombie)
 
 ;;; zombie.el ends here
