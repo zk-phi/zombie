@@ -88,11 +88,12 @@
                    (looking-at zombie-block-closing-regexp))))
     (indent-line-to (max (- col (if closing zombie-indent-width 0)) 0))))
 
+;;;###autoload
 (define-derived-mode zombie-mode prog-mode "ZOMBIE"
   "Major mode for editing ZOMBIE programs."
   :group 'zombie
   (set (make-local-variable 'indent-line-function) 'zombie-indent-line)
-  (set (make-local-variable 'font-lock-defaults) '(zombie-font-lock-keywords)))
+  (setq font-lock-defaults '(zombie-font-lock-keywords)))
 
 (provide 'zombie)
 
